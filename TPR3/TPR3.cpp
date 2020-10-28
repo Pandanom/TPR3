@@ -2,10 +2,22 @@
 //
 
 #include <iostream>
+#include "Electre.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	double ** d;
+	d = new double*[4];
+	d[0] = new double[5]{ 9,8,1,3,7 };
+	d[1] = new double[5] {3,7,3,6,5,};
+	d[2] = new double[5] {1,2,5,1,3};
+	d[3] = new double[5] {2,5,1,7,5};
+	auto w = new double[5]{ 9,5,3,1,5 };
+	Electre e(5, 4, 0.8, 0.5);
+	e.SetMatrix(d, w);
+	e.CalculateAB();
+	e.PrintAnswer();
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

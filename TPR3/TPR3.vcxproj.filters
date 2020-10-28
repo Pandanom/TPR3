@@ -18,5 +18,13 @@
     <ClCompile Include="TPR3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Electre.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Electre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
